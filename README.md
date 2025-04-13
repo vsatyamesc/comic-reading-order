@@ -1,7 +1,7 @@
 # comic-reading-order
 A Git Repo to host the code for Synthesizing an Training a Transformer Model for Predicting the Sequence of Reading Comics Bubbles and Panels. 
 
-## :eight_spoked_asterisk: Left to Right Reading Order Data Synthesizer for Now :eight_spoked_asterisk:
+## :eight_spoked_asterisk: Synthesize Images According to Scripts :eight_spoked_asterisk:
 ## Why? :confused:
 I plan to automate the process of translation of comics because I like them, most of them are not available for free to read or their english translation isn't even available.
 
