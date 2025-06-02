@@ -1,6 +1,8 @@
 # comic-reading-order
 A Git Repo to host the code for Synthesizing an Training a Transformer Model for Predicting the Sequence of Reading Comics Bubbles and Panels. 
 
+:star2: :star2: update: Working models have been uploaded in the git. RTL - right to left, LTR - left to right, reading sequence. Anyways, you could recursively detect panels and bubbles to get the job done. I've also included a simple panel detector using yolo.
+
 ## :eight_spoked_asterisk: Synthesize Images According to Scripts :eight_spoked_asterisk:
 ## Why? :confused:
 I plan to automate the process of translation of comics because I like them, most of them are not available for free to read or their english translation isn't even available.
