@@ -131,11 +131,12 @@ class SequencerTransformer():
         self.model.load_state_dict(torch.load(model_path, map_location=DEVICE), strict=False)
         self.model.eval()
     
-    # Expects xc yc w h
+    # Expects [[xc yc w h]] and returns [x1, y1, x2, y2, xc, yc, w, h], x1,x2,y1,y2,xc,yc were very important features when we trained. xc,yc,w,h couldn't get the job done.
     def preprocessor(self, panels):
         preprocessed = [MangaTransformer.preprocess_panel(*panel) for panel in panels]
         return preprocessed
-    
+
+    # Expects a list of panel/bubble in [[xc yc w h]]
     def predict(self, panels):
         preprocessed = self.preprocessor(panels)
         sequence = self.model.predict_sequence(preprocessed)
